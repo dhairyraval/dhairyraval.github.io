@@ -2785,15 +2785,14 @@ input, select, textarea {
 						ul.actions:not(.fixed) li .button.icon:before {
 							margin-left: -0.5rem;
 						}
-				.custom-li {
+				body ul.actions.custom-ul {
+					display: flex;
+					flex-direction: row;
+					gap: 15px;
+					margin-bottom: -1rem;
 				}
-				.custom-ul {
-					/* border: 5px solid red; */
-					display: flex;           /* Puts items in one row */
-					align-items: center;     /* Aligns items vertically */
-					justify-content: center;
-					gap: 3rem;               /* Adds spacing between icons */
-					list-style: none;        /* Removes bullets */
+				ul.actions.custom-ul:not(.fixed) li {
+					padding: 0;
 				}
 		}
 
@@ -3111,6 +3110,7 @@ input, select, textarea {
 			}
 
 				.spotlights > section > .image {
+					display: block !important;
 					width: 100%;
 					height: 50vh;
 				}
@@ -3133,7 +3133,7 @@ input, select, textarea {
 
 			.spotlights > section > .image {
 				height: 50vh;
-				min-height: 15em;
+				min-height: 17em;
 			}
 
 			.spotlights > section > .content {
